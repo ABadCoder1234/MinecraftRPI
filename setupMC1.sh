@@ -67,9 +67,9 @@ sudo tar -zxf jdk-8u211-linux-arm32-vfp-hflt.tar.gz -C /opt/jdk
 
 # get run script
 echo Setup 11/12
-sudo mv /home/pi/12-1RPI/runMC1_12_2_OptifineF4.sh Minecraft/runMC1_12_2_OptifineF4.sh
+sudo mv /home/pi/MinecraftRPI+/runMC1_12_2_OptifineF4.sh Minecraft/runMC1_12_2_OptifineF4.sh
 sudo chmod +x runMC1_12_2_OptifineF4.sh  
-
+#I notice this extra Setup step but if it aint broke dont fix it
 echo Setup 12/12
 wget https://www.dropbox.com/s/j4ib66feomck3gb/setupMC2.sh
 sudo chmod +x setupMC2.sh  
