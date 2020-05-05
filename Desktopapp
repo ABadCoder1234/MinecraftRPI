@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Minecraft
+GenericName=Minecraft
+Comment=Minecraft Raspberry Pi Edition +
+Exec=/usr/bin/MinecraftRPI+
+Icon=/home/pi/Minecraft/MenuIcon.png
+Categories=Game
+Terminal=true
+Type=Application
