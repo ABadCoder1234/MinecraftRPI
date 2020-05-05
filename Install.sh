@@ -15,14 +15,14 @@ read -rsn1 input
 if [ "$input" == "s" ]; then
 echo skipped
 else
-mkdir ~/Minecraft  && sudo cp MinecraftRPI+/setupMC1.sh Minecraft/setupMC1.sh && sudo chmod +x Minecraft/setupMC1.sh && Minecraft/setupMC1.sh
+mkdir ~/Minecraft  && sudo cp MinecraftRPI/setupMC1.sh Minecraft/setupMC1.sh && sudo chmod +x Minecraft/setupMC1.sh && Minecraft/setupMC1.sh
 echo Installing Run Script
-sudo cp /home/pi/MinecraftRPI+/runMC1_12_2_OptifineF4.sh Minecraft/runMC1_12_2_OptifineF4.sh
+sudo cp /home/pi/MinecraftRPI/runMC1_12_2_OptifineF4.sh Minecraft/runMC1_12_2_OptifineF4.sh
 sudo chmod +x Minecraft/runMC1_12_2_OptifineF4.sh
 echo Download other technical things
 echo Press any key to continue
 read -rsn1 input
-cd MinecraftRPI+
+cd MinecraftRPI
 sudo chmod +x setupMC2.sh
 setupMC2.sh
 fi
@@ -49,13 +49,13 @@ sleep 1
 echo "1"
 sleep 1
 cd
-sudo chmod +x MinecraftRPI+/OpenMinecraft
-sudo mv MinecraftRPI+/OpenMinecraft /usr/bin/OpenMinecraft
+sudo chmod +x MinecraftRPI/OpenMinecraft
+sudo mv MinecraftRPI/OpenMinecraft /usr/bin/OpenMinecraft
 sudo chmod +x /usr/bin/OpenMinecraft
 echo Launcher installation finished
 echo "Now installing menu entry. (New)"
-sudo cp MinecraftRPI+/Minecraft.png Minecraft/MenuIcon.png
-sudo mv MinecraftRPI+/Desktopapp /usr/share/applications/Minecraft.desktop
+sudo cp MinecraftRPI/Minecraft.png Minecraft/MenuIcon.png
+sudo mv MinecraftRPI/Desktopapp /usr/share/applications/Minecraft.desktop
 sleep 1
 echo Run command OpenMinecraft to play the wonderful game pro gamers know as, Minecraft
 echo Or find it in the Menu!
